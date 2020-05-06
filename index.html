@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form - FreeCodeCamp Project #2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main>
+  
+  <div id="heading">
+    
+  <h1 id="title"> Alberta Covid-19 Countermeasures</h1>
+  <p id="description">What do you think about the government of Alberta's current lockdown countermeasures against covid-19? </p>
+    
+  </div>
+  
+  <form id="survey-form" class="form">
+    
+    <div class="form-fields">
+    <label for="name" id="name-label">Name:</label>
+    <input id="name" type="text" placeholder="Enter Your Name" required>
+    </div>
+    
+    <div class="form-fields">
+    <label for="email" id="email-label">Email:</label>
+    <input id="email" type="email" placeholder="Enter Your Email" required>
+    </div>
+      
+    <div class="form-fields">
+    <label for="number" id="number-label">Age:</label>
+    <input id="number" type="number" min="18" max="90" placeholder="Age" required>
+    </div>
+    
+  <div class="form-fields">
+    <p>Are you satisfied with the current lockdown countermeasures?</p>
+    <select id="dropdown" name="satisfaction">
+      <option value="">-please select and option</option>
+      <option value="Satisfied">Satisfied</option>
+      <option value="Not-Satisfied">Not Satisfied</option>
+      </select>
+    </div>
+    
+    <div id="form-fields">
+     <p>Do you think current measures are causing more or less harm?</p>
+    <label id="more-harm" for="more-harm"><input type="radio" name="measure-rating" id="More-harm" value="More-harm">More Harm</label>
+     <label for="Less-harm"><input type="radio" name="measure-rating" id="Less-harm" value="Less-harm">Less Harm</label>
+    </div>
+    
+   <div class="form-fields">
+     <p>What next steps do you think the Alberta government should take?</p>
+     <label for="CheckBox">
+     <input type="checkbox" value="Open-Economy" class="input-checkbox" id="CheckBox">Open The Economy</label>
+     
+     <label for="CheckBox">
+     <input type="checkbox" value="Keep-Providing" class="input-checkbox" id="CheckBox">Keep Providing Benefits Until December</label>
+     
+     <label for="CheckBox">
+     <input type="checkbox" value="Small-Business-Loans" class="input-checkbox" id="CheckBox">Give Out Loans to Small Businesses</label>
+    
+     <label for="CheckBox">
+     <input type="checkbox" value="Student-Benefits" class="input-checkbox">Increase Benefits for Students</label>
+     
+     <label for="CheckBox">
+     <input type="checkbox" value="International-Student-Benefits" class="input-checkbox" id="CheckBox">Include International Students in Benefits Program</label>
+    
+    </div>
+    
+    <div class="form-fields">
+      <p>Any comments or suggestions?</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter Your Comment Here"></textarea>
+      </div>
+    <div class="form-fields">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+    
+  </form>
+</main>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- partial -->
+  
+</body>
+</html>

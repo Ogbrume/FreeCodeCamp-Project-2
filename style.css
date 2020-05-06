@@ -1,0 +1,117 @@
+body{
+  background-image: url(https://ewscripps.brightspotcdn.com/dims4/default/98dbb4f/2147483647/strip/true/crop/1280x720+0+0/resize/1280x720!/quality/90/?url=https%3A%2F%2Fewscripps.brightspotcdn.com%2F23%2F75%2Febb222c64c6cba92f8098c83fe28%2Fcoronavirus-background-1280x720-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main{
+  font-family: verdana;
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr minmax(30ch, 70ch) 1fr;
+}
+
+.form-fields{
+  margin: 0em auto 0.2rem auto;
+  padding: 0.52rem;
+}
+
+#heading{
+  text-align: center;
+  grid-column-start: 2;
+}
+
+#description{
+  margin: 0px 0px 50px 0px;
+  grid-column-start: 2;
+}
+
+form{
+  grid-column-start: 2;
+}
+
+input[type=text]{
+  min-width: 100%;
+}
+
+input[type=email]{
+  min-width: 100%;
+}
+
+input[type=number]{
+  min-width: 100%;
+}
+
+select{
+  min-width: 100%;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  border-radius: 3px;
+}
+
+input{
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+label[for=more-harm]{
+  display: flex;
+  align-items: center;
+  padding: 0.52rem;
+}
+
+label[for=Less-harm]{
+  display: flex;
+  align-items: center;
+  padding: 0.52rem;
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+  padding: 0rem 0.52rem 0rem 0rem;
+}
+
+.input-checkbox{
+  display: inline-block;
+}
+
+label[for=CheckBox]{
+  display: flex;
+  align-items: center;
+  padding: 0.52rem;
+}
+
+.input-textarea{
+  min-height: 120px;
+  width: 100%; /*stretches the entire width of container*/
+  padding: 0.625rem;
+  resize: vertical;
+  border-radius: 3px;
+  box-sizing: border-box;
+  resize: none; /*the "grabber" disappers, cannot be resized*/
+}
+
+/* focus outlines actions to take place once the specified element is in focus (clicked on)*/
+input:focus{
+  background-color: lightblue;
+}
+
+button{
+  background-color: #c31432;
+  border-color: teal;
+  color: white;
+  padding: 0.5rem;
+}
+
+form{
+  background-color: rgb(233, 64, 87, 0.6); /*"0.6" represents the opacity of the background color*/
+  padding: 2rem;
+  border-radius: 5px
+    
+}
